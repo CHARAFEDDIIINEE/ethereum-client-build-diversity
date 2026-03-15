@@ -170,26 +170,4 @@ python scripts/generate_csv.py
 
 ---
 
-## Contributing
 
-Corrections, updates, and additions are welcome! Please open an issue or PR if:
-- A client's pipeline has changed since March 2026
-- You have additional data or observations
-- You spot errors in the analysis
-
----
-
-## License
-
-MIT License. See [LICENSE](LICENSE).
-
----
-
-## Citation
-
-If you use this research, please cite:
-
-```
-Ethereum Client Build Pipeline Diversity Analysis (March 2026)
-https://github.com/your-handle/eth-client-build-diversity
-```
