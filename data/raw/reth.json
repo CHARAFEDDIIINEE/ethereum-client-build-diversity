@@ -1,0 +1,14 @@
+{
+  "name": "reth",
+  "repo": "https://github.com/paradigmxyz/reth",
+  "language": "Rust",
+  "ci_platform": "github-actions",
+  "workflow_count": 29,
+  "build_tools": "cargo, make, cargo-nextest, cross",
+  "lockfile": "Cargo.lock",
+  "package_manager": "cargo",
+  "docker_support": "true",
+  "docker_registry": "ghcr.io, docker-hub",
+  "uses_bazel": "false",
+  "collected_at": "2026-03-14T17:13:13Z"
+}

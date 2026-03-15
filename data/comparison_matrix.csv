@@ -1,0 +1,12 @@
+client,client_type,language,ci_platform,workflow_count,build_tool,package_manager,lockfile,lockfile_committed,docker_support,docker_registry,uses_bazel,arm_support,reproducible_builds,notes
+lighthouse,consensus,Rust,GitHub Actions,~10-12,"cargo, make",cargo,Cargo.lock,yes,yes,ghcr.io,no,yes,no,rust-toolchain.toml pins exact toolchain; cross for ARM
+prysm,consensus,Go,GitHub Actions,~8-10,"bazel/bazelisk, go modules, make",go-modules,"go.sum, WORKSPACE",yes,yes,gcr.io,yes,partial,yes,Only client using Bazel; hermetic builds; distroless containers
+teku,consensus,Java,GitHub Actions,~6-8,gradle,gradle/maven-central,gradle.lockfile,yes,yes,docker-hub,no,yes,no,Consensys; shares Java+Gradle pattern with Besu
+nimbus,consensus,Nim,"GitHub Actions (primary), Jenkins (historical)",~8-12,"make, nimble",git-submodules,git submodule SHAs (.gitmodules),yes,yes,docker-hub,no,yes,no,Only Nim client; no package registry; strongest supply chain isolation; best ARM support
+lodestar,consensus,TypeScript,GitHub Actions,~8-10,"pnpm, tsc",pnpm,pnpm-lock.yaml,yes,yes,docker-hub,no,partial,no,Only TypeScript client; pnpm chosen for supply chain security (blocks postinstall scripts)
+grandine,consensus,Rust,GitHub Actions,~4-6,cargo,cargo,Cargo.lock,yes,yes,ghcr.io,no,partial,no,Simplest CI of all consensus clients; fewest workflows
+geth,execution,Go,GitHub Actions,~8-10,"go modules, make, build/ci.go",go-modules,go.sum,yes,yes,docker-hub,no,yes,no,Custom Go CI orchestration script (build/ci.go); Azure Blob Storage for artifacts
+nethermind,execution,C#,GitHub Actions,~20+,"dotnet/msbuild, cmake",nuget,packages.lock.json (partial),partial,yes,docker-hub,no,yes,yes,Most complex CI; 5 native C/C++ library builds; SOURCE_DATE_EPOCH reproducibility
+besu,execution,Java,GitHub Actions,~10-12,gradle,gradle/maven-central,gradle.lockfile,yes,yes,docker-hub,no,yes,no,Consensys/Hyperledger; DCO validation; Spotless formatter; Repolinter
+erigon,execution,Go,GitHub Actions,~10-14,"go modules, make",go-modules,go.sum,yes,yes,docker-hub,no,yes,no,Kurtosis multi-client testnet in CI; Assertoor; docker-compose stack
+reth,execution,Rust,GitHub Actions,~10-14,"cargo, cargo-nextest, cross",cargo,Cargo.lock,yes,yes,ghcr.io,no,yes,yes,cargo-nextest; multiple build profiles; cargo-deny; most modern Rust CI

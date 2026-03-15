@@ -1,0 +1,14 @@
+{
+  "name": "besu",
+  "repo": "https://github.com/hyperledger/besu",
+  "language": "unknown",
+  "ci_platform": "unknown",
+  "workflow_count": 0,
+  "build_tools": "unknown",
+  "lockfile": "none",
+  "package_manager": "unknown",
+  "docker_support": "false",
+  "docker_registry": "unknown",
+  "uses_bazel": "false",
+  "collected_at": "2026-03-14T17:14:49Z"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "erigon",
+  "repo": "https://github.com/erigontech/erigon",
+  "language": "Go",
+  "ci_platform": "github-actions, buildkite",
+  "workflow_count": 42,
+  "build_tools": "go modules, make",
+  "lockfile": "go.sum",
+  "package_manager": "go-modules",
+  "docker_support": "true",
+  "docker_registry": "ghcr.io, docker-hub",
+  "uses_bazel": "false",
+  "collected_at": "2026-03-14T17:13:04Z"
+}

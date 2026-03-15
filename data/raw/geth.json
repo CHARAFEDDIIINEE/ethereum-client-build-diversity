@@ -1,0 +1,14 @@
+{
+  "name": "geth",
+  "repo": "https://github.com/ethereum/go-ethereum",
+  "language": "Go",
+  "ci_platform": "github-actions",
+  "workflow_count": 2,
+  "build_tools": "go modules, make, build/ci.go",
+  "lockfile": "go.sum",
+  "package_manager": "go-modules",
+  "docker_support": "true",
+  "docker_registry": "unknown",
+  "uses_bazel": "false",
+  "collected_at": "2026-03-14T17:12:55Z"
+}

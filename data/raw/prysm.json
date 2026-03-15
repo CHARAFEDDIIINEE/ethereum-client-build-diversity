@@ -1,0 +1,14 @@
+{
+  "name": "prysm",
+  "repo": "https://github.com/prysmaticlabs/prysm",
+  "language": "Go",
+  "ci_platform": "github-actions, travis-ci",
+  "workflow_count": 7,
+  "build_tools": "bazel/bazelisk, go modules, make",
+  "lockfile": "go.sum, WORKSPACE",
+  "package_manager": "go-modules",
+  "docker_support": "true",
+  "docker_registry": "unknown",
+  "uses_bazel": "true",
+  "collected_at": "2026-03-14T17:13:15Z"
+}

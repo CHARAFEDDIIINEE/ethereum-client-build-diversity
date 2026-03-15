@@ -1,0 +1,14 @@
+{
+  "name": "lodestar",
+  "repo": "https://github.com/ChainSafe/lodestar",
+  "language": "TypeScript",
+  "ci_platform": "github-actions",
+  "workflow_count": 21,
+  "build_tools": "pnpm, tsc",
+  "lockfile": "pnpm-lock.yaml",
+  "package_manager": "pnpm",
+  "docker_support": "true",
+  "docker_registry": "docker-hub",
+  "uses_bazel": "false",
+  "collected_at": "2026-03-14T17:13:09Z"
+}

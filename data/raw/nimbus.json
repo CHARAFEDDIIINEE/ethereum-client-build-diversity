@@ -1,0 +1,14 @@
+{
+  "name": "nimbus",
+  "repo": "https://github.com/status-im/nimbus-eth2",
+  "language": "Nim",
+  "ci_platform": "github-actions, jenkins",
+  "workflow_count": 5,
+  "build_tools": "make, nimble",
+  "lockfile": "git submodule SHAs (.gitmodules)",
+  "package_manager": "git-submodules",
+  "docker_support": "true",
+  "docker_registry": "docker-hub",
+  "uses_bazel": "false",
+  "collected_at": "2026-03-14T17:12:59Z"
+}

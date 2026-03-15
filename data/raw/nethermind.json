@@ -1,0 +1,14 @@
+{
+  "name": "nethermind",
+  "repo": "https://github.com/NethermindEth/nethermind",
+  "language": "unknown",
+  "ci_platform": "github-actions",
+  "workflow_count": 36,
+  "build_tools": "unknown",
+  "lockfile": "none",
+  "package_manager": "unknown",
+  "docker_support": "true",
+  "docker_registry": "docker-hub",
+  "uses_bazel": "false",
+  "collected_at": "2026-03-14T17:13:02Z"
+}
