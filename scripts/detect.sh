@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Configuration
-CLIENTS_DIR="C:\Users\chrfd\ethereum-client-build-diversity\scripts\ethereum-clients" # Directory containing Ethereum client repositories (When using this script, ensure you have cloned the client repos into this directory with the correct names)
+CLIENTS_DIR="./ethereum-clients" # Directory containing Ethereum client repositories (When using this script, ensure you have cloned the client repos into this directory with the correct names)
 OUTPUT_FILE="detection_results_v2.md"
 
 # Client list
