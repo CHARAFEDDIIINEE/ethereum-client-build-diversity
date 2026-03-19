@@ -22,21 +22,24 @@ Of the 11 clients studied, **10 use GitHub Actions as their primary (and often o
 - In March 2025, a major supply chain attack on `tj-actions/changed-files` demonstrated this risk
 
 **Workflow count ranges:**
-| Client | Approx. Workflows | Complexity |
-|--------|-------------------|------------|
-| Nethermind | 20+ | Very High |
-| Prysm | 10+ | Very High |
-| Lighthouse | 10+ | High |
-| Erigon | 10+ | High |
-| Reth | 10+ | High |
-| Besu | 8+ | High |
-| Teku | 8+ | High |
-| Lodestar | 8+ | Medium |
-| Geth | 8+ | High |
-| Nimbus | 5+ | High |
-| Grandine | 5+ | Medium |
 
-**Outlier: Nethermind** — With over 20 separate GitHub Actions workflow files, Nethermind has by far the most complex CI infrastructure. Separate workflows handle native library builds (BLS, GMP, MCL, RocksDB, Secp256k1), Hive tests, PPA publishing, DAppNode packages, Discord announcements, and more. This depth reflects the complexity of the C#/.NET ecosystem's native dependencies.
+| Client | Approx. Workflows | 
+|--------|-------------------|
+| **Erigon** | 39 |
+| **Nethermind** | 34 |
+| **Reth** | 28 |
+| **Lodestar** | 20 |
+| **Besu** | 16 |
+| **Teku** | 10 | 
+| **Lighthouse** | 8 | 
+| **Prysm** | 7 | 
+| **Nimbus** | 5 | 
+| **Grandine** | 3 | 
+| **Geth** | 2 | 
+
+**Outlier: Erigon** — With 39 separate GitHub Actions workflow files, Erigon has the most complex CI infrastructure among all clients. Its CI includes Kurtosis multi-client testnet integration, Assertoor scenario testing, extensive QA workflows, and docker-compose stacks for local development.
+
+**Nethermind** follows closely with 34 workflows, featuring separate pipelines for native library builds (BLS, GMP, MCL, RocksDB, Secp256k1), Hive tests, PPA publishing, DAppNode packages, and Discord announcements.
 
 ---
 
